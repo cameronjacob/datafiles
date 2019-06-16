@@ -2,7 +2,7 @@
 ORIGINAL PLUGIN BY JAMES - PERMISSION FOR RELEASE GRANTED
 
 _________________________
-INFORMATION
+<b>INFORMATION</b>
 _________________________
 
 An edited version I worked on for a community that closed (unfinished).
@@ -24,7 +24,7 @@ What does the datapad/pda's do?
 3. CMU datapad gives access to a limited version of the /datafile (adding medical notes) and custom CMU only objectives editable by CMU leader settable by /setcmulead and /removecmulead.
 
 _________________________
-SHAREDVARS (playerVars:Number only) -- primarily used for datapad sweps material switching to work properly
+<b>SHAREDVARS</b> (playerVars:Number only) -- primarily used for datapad sweps material switching to work properly
 _________________________
 
 1. LoyaltyPoints
@@ -37,7 +37,7 @@ _________________________
 8. PlayerEnterOpen
 
 _________________________
-UNFINISHED PARTS
+<b>UNFINISHED PARTS</b>
 _________________________
 
 1. Didn't make SQL table creation automatic.
@@ -45,7 +45,7 @@ _________________________
 3. Apparently there's an error which I'm unable to recreate with the datapad derma.
 
 _________________________
-FOR IT TO WORK YOU NEED TO DO THIS
+<b>FOR IT TO WORK YOU NEED TO DO THIS</b>
 _________________________
 
 Add these columns to characters SQL table with default variable "fill" (I didn't bother to make it create itself):
@@ -53,8 +53,8 @@ _GenericData
 _Datafile
 
 _________________________
-STREAMABLES OF THE PLUGIN(S) - videos may or may not differ from what the plugin looks like now.
+<b>STREAMABLES OF THE PLUGIN(S)</b> - videos may or may not differ from what the plugin looks like now.
 _________________________
 
-https://streamable.com/vfjmu
-https://streamable.com/9uou4
+1. https://streamable.com/vfjmu
+2. https://streamable.com/9uou4
