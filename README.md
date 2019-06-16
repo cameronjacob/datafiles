@@ -1,3 +1,4 @@
+![Image of Datafile](https://i.imgur.com/2DnlQyU.png)
 # Datafiles
 ORIGINAL PLUGIN BY JAMES - PERMISSION FOR RELEASE GRANTED
 
