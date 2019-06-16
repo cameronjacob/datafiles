@@ -26,6 +26,7 @@ What does the datapad/pda's do?
 _________________________
 SHAREDVARS (playerVars:Number only) -- primarily used for datapad sweps material switching to work properly
 _________________________
+
 1. LoyaltyPoints
 2. BOL
 3. LoyaltyTier
@@ -38,6 +39,7 @@ _________________________
 _________________________
 UNFINISHED PARTS
 _________________________
+
 1. Didn't make SQL table creation automatic.
 2. Didn't do CWU & CMU PDA attachments item-wise.
 3. Apparently there's an error which I'm unable to recreate with the datapad derma.
@@ -45,6 +47,14 @@ _________________________
 _________________________
 FOR IT TO WORK YOU NEED TO DO THIS
 _________________________
+
 Add these columns to characters SQL table with default variable "fill" (I didn't bother to make it create itself):
 _GenericData
 _Datafile
+
+_________________________
+STREAMABLES OF THE PLUGIN(S) - videos may or may not differ from what the plugin looks like now.
+_________________________
+
+https://streamable.com/vfjmu
+https://streamable.com/9uou4
