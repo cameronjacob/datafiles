@@ -1,4 +1,4 @@
-# datafiles
+# Datafiles
 ORIGINAL PLUGIN BY JAMES - PERMISSION FOR RELEASE GRANTED
 
 _________________________
@@ -32,6 +32,8 @@ _________________________
 4. PlayerIsRestricted
 5. DatafileOpen
 6. ManagementOpen
+7. PlayerObjectivesOpen
+8. PlayerEnterOpen
 
 _________________________
 UNFINISHED PARTS
