@@ -1,9 +1,9 @@
 # datafiles
 ORIGINAL PLUGIN BY JAMES - PERMISSION FOR RELEASE GRANTED
 
-_______________________________________________________________________________________________________________
+_________________________
 INFORMATION
-_______________________________________________________________________________________________________________
+_________________________
 
 An edited version I worked on for a community that closed (unfinished).
 
@@ -23,26 +23,26 @@ What does the datapad/pda's do?
 2. CWU datapad gives access to a limited version of the /datafile (adding notes) and custom CWU only objectives editable by CWU leader settable by /setcwulead and /removecwulead.
 3. CMU datapad gives access to a limited version of the /datafile (adding medical notes) and custom CMU only objectives editable by CMU leader settable by /setcmulead and /removecmulead.
 
-_______________________________________________________________________________________________________________
+_________________________
 SHAREDVARS (playerVars:Number only) -- primarily used for datapad sweps material switching to work properly
-_______________________________________________________________________________________________________________
-LoyaltyPoints
-BOL
-LoyaltyTier
-PlayerIsRestricted
-DatafileOpen
-ManagementOpen
+_________________________
+1. LoyaltyPoints
+2. BOL
+3. LoyaltyTier
+4. PlayerIsRestricted
+5. DatafileOpen
+6. ManagementOpen
 
-_______________________________________________________________________________________________________________
+_________________________
 UNFINISHED PARTS
-_______________________________________________________________________________________________________________
+_________________________
 1. Didn't make SQL table creation automatic.
 2. Didn't do CWU & CMU PDA attachments item-wise.
 3. Apparently there's an error which I'm unable to recreate with the datapad derma.
 
-_______________________________________________________________________________________________________________
+_________________________
 FOR IT TO WORK YOU NEED TO DO THIS
-_______________________________________________________________________________________________________________
+_________________________
 Add these columns to characters SQL table with default variable "fill" (I didn't bother to make it create itself):
 _GenericData
 _Datafile
