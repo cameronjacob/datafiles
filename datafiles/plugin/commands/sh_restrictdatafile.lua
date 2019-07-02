@@ -11,8 +11,8 @@ COMMAND.optionalArguments = 1;
 function COMMAND:OnRun(player, arguments)
     local target = Clockwork.player:FindByID(arguments[1]);
     local text = table.concat(arguments, " ", 2);
-	local PlayerIsScanner = SCHEMA:IsPlayerCombineRank(player, "SCN");
-	local PlayerIsLeader = SCHEMA:IsPlayerCombineRank(player, "RL");
+	--local PlayerIsScanner = SCHEMA:IsPlayerCombineRank(player, "SCN");
+	--local PlayerIsLeader = SCHEMA:IsPlayerCombineRank(player, "RL");
 	local PlayerIsOverwatch = player:GetFaction() == FACTION_OW;
 
     if (!text or text == "") then
@@ -20,7 +20,7 @@ function COMMAND:OnRun(player, arguments)
     end;
 
     if (target) then
-    	if (player:GetSharedVar("PlayerPanelOpen") == 1 and PlayerIsLeader) or (PlayerIsScanner) or (PlayerIsOverwatch) then
+    	if (player:GetSharedVar("PlayerPanelOpen") == 1 and PlayerIsOverwatch) then
     		if (text) then
 	        	cwDatafile:SetRestricted(true, text, target, player);
 

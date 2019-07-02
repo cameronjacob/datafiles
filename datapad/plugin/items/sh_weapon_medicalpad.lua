@@ -3,10 +3,11 @@
 	without permission of its author (kurozael@gmail.com).
 --]]
 
-local ITEM = Clockwork.item:New("special_weapon");
+local ITEM = Clockwork.item:New("weapon_base");
 	ITEM.name = "CMU PDA";
 	ITEM.cost = 500;
-	ITEM.model = "models/kali/miscstuff/stalker/pda.mdl";
+	--ITEM.model = "models/kali/miscstuff/stalker/pda.mdl";
+	ITEM.model = "models/props_lab/reciever01d.mdl";
 	ITEM.weight = 1;
 	ITEM.access = "v";
 	ITEM.skin = 0

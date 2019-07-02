@@ -26,17 +26,17 @@ PLUGIN.Categories = {
 // Permissions for the numerous factions.
 PLUGIN.Permissions = {
 	elevated = {
-		"Overwatch",
+		"Administrator",
 	},
 	full = {
 		"Overwatch Transhuman Arm",
-		"Civil Protection",
+		"Metropolice Force",
 	},
 	medical = {
 		"Civil Medical Union",
 	},
 	cwu = {
-		"Civil Workers' Union",
+		"Civil Worker's Union",
 	},
 	none = {
 		"Citizen",
@@ -64,7 +64,7 @@ PLUGIN.CivilStatus = {
 PLUGIN.EmploymentStatus = {
 	"Overwatch Transhuman Arm",
 	"Civil Protection",
-	"Chamber of Binders",
+	"Civil Worker's Union",
 	"Civil Medical Union",
 	"Citizen",
 	"Biotic",

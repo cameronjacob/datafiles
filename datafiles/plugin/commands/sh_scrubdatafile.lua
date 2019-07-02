@@ -10,12 +10,12 @@ COMMAND.arguments = 1;
 
 function COMMAND:OnRun(player, arguments)
     local target = Clockwork.player:FindByID(table.concat(arguments, " "));
-	local PlayerIsScanner = SCHEMA:IsPlayerCombineRank(player, "SCN");
-	local PlayerIsLeader = SCHEMA:IsPlayerCombineRank(player, "RL");
-	local PlayerIsOverwatch = player:GetFaction() == FACTION_OW;
+	--local PlayerIsScanner = SCHEMA:IsPlayerCombineRank(player, "SCN");
+	--local PlayerIsLeader = SCHEMA:IsPlayerCombineRank(player, "RL");
+	local PlayerIsOverwatch = player:GetFaction() == FACTION_OTA;
 	
     if (target) then
-		if (player:GetSharedVar("PlayerPanelOpen") == 1 and PlayerIsLeader) or (PlayerIsScanner) or (PlayerIsOverwatch) then
+		if (player:GetSharedVar("PlayerPanelOpen") == 1 and PlayerIsOverwatch) then
 			cwDatafile:ScrubDatafile(target);
 			player:SetSharedVar( "PlayerPanelOpen", 0 );
 			player:SetSharedVar( "PlayerEnterOpen", 0 );

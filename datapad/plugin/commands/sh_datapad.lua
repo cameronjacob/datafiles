@@ -6,7 +6,7 @@ COMMAND.flags = CMD_DEFAULT;
 
 -- Called when the command has been run.
 function COMMAND:OnRun(player, arguments)
-	if (Schema:PlayerIsCombine(player)) or (Clockwork.player:HasFlags(player, "d")) then
+	if (Schema:PlayerIsCombine(player)) or (Clockwork.player:HasFlags(player, "d") or (player:GetFaction() == FACTION_ADMIN)) then
 		if (player:GetActiveWeapon():GetClass() == "weapon_datapad") then
 			Clockwork.datastream:Start(player, "DrawDatapad");
 			player.editObjectivesAuthorised = true;

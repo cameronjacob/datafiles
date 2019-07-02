@@ -10,19 +10,19 @@ COMMAND.arguments = 1;
 
 function COMMAND:OnRun(player, arguments)
 	local target = Clockwork.player:FindByID(arguments[1]);
-	local PlayerIsScanner = SCHEMA:IsPlayerCombineRank(player, "SCN");
-	local PlayerIsOverwatch = player:GetFaction() == FACTION_OW;
-	local PlayerIsLeader = SCHEMA:IsPlayerCombineRank(player, "RL");
+	--local PlayerIsScanner = SCHEMA:IsPlayerCombineRank(player, "SCN");
+	local PlayerIsOverwatch = player:GetFaction() == FACTION_OTA;
+	--local PlayerIsLeader = SCHEMA:IsPlayerCombineRank(player, "RL");
 
     if (target) then
-        if (cwDatafile:IsRestrictedFaction(target)) or (player:GetSharedVar("PlayerPanelOpen") == 0 and !PlayerIsScanner and !PlayerIsOverwatch) then
+        if (cwDatafile:IsRestrictedFaction(target)) or (player:GetSharedVar("PlayerPanelOpen") == 0 and !PlayerIsOverwatch) then
 			Clockwork.player:Notify(player, "This datafile does not exist or you should use the datapad to execute this command.");
-		elseif (player:GetSharedVar("PlayerPanelOpen") == 1 and target:GetSharedVar("PlayerIsRestricted") == 0) or (PlayerIsScanner) or (PlayerIsOverwatch) or (PlayerIsLeader) then
+		elseif (player:GetSharedVar("PlayerPanelOpen") == 1 and target:GetSharedVar("PlayerIsRestricted") == 0) or (PlayerIsOverwatch) then
 			cwDatafile:HandleDatafile(player, target)
 			player:SetSharedVar( "DatafileOpen", 1 );
 			player:SetSharedVar( "PlayerPanelOpen", 0 );
 			player:SetSharedVar( "PlayerEnterOpen", 0 );
-		elseif (player:GetSharedVar("PlayerPanelOpen") == 1) and (!PlayerIsScanner or !PlayerIsOverwatch) and (target:GetSharedVar("PlayerIsRestricted") == 1) then
+		elseif (player:GetSharedVar("PlayerPanelOpen") == 1) and (!PlayerIsOverwatch) and (target:GetSharedVar("PlayerIsRestricted") == 1) then
 			Clockwork.player:Notify(player, "This datafile has been restricted and is only accessible by RL or Dispatch.");
 			player:SetSharedVar( "PlayerPanelOpen", 0 );
 			player:SetSharedVar( "PlayerEnterOpen", 0 );

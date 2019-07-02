@@ -3,10 +3,11 @@
 	without permission of its author (kurozael@gmail.com).
 --]]
 
-local ITEM = Clockwork.item:New("special_weapon");
+local ITEM = Clockwork.item:New("weapon_base");
 	ITEM.name = "Civil Protection Datapad";
 	ITEM.cost = 500;
-	ITEM.model = "models/fruity/tablet/tablet_sfm.mdl";
+	--ITEM.model = "models/fruity/tablet/tablet_sfm.mdl";
+	ITEM.model = "models/props_combine/combine_intmonitor003.mdl";
 	ITEM.weight = 1;
 	ITEM.access = "v";
 	ITEM.skin = 1

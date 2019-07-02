@@ -3,7 +3,6 @@ local PLUGIN = PLUGIN;
 // Check if the player has a datafile or not. If not, create one.
 function cwDatafile:PostPlayerSpawn(player)
 	local bHasDatafile = cwDatafile:HasDatafile(player);
-
 	// Nil because the bHasDatafile is not in every player their character data.
 	if ((!bHasDatafile || bHasDatafile == nil) && !cwDatafile:IsRestrictedFaction(player)) then
 		cwDatafile:CreateDatafile(player);
@@ -26,7 +25,6 @@ function cwDatafile:LoadDatafile(player)
 			queryObj:AddWhere("_Schema = ?", schemaFolder);
 			queryObj:SetCallback(function(result)
 				if (!IsValid(player)) then return; end;
-
 				if (Clockwork.database:IsResult(result)) then
 					character.file = {
 						GenericData = Clockwork.json:Decode(result[1]._GenericData);
