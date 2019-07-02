@@ -5,7 +5,7 @@ ORIGINAL PLUGIN BY JAMES - PERMISSION FOR RELEASE GRANTED
 Conversion done by vex#0011.
 
 _________________________
-<b>Information</b>
+<b>Note</b>
 _________________________
 
 Here's a full conversion of this plugin for HL2:RP v1.3.
@@ -16,7 +16,9 @@ For those running MySQL, be aware you may run across an issue where you can't ru
 
 Additionally, I wasn't able to find the content for the models that were used in the screenshots and the videos, so I've replaced the world models with basic HL2 ones to prevent errors in your inventory. If you want to switch them yourself, you can do so easily in the item files of each datapad.
 
-An edited version I worked on for a community that closed (unfinished).
+_________________________
+<b>Information</b>
+_________________________
 
 Features different from the version by James:
 1. BOL removal fixed.
