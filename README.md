@@ -8,6 +8,14 @@ _________________________
 <b>Information</b>
 _________________________
 
+Here's a full conversion of this plugin for HL2:RP v1.3.
+
+There are still some things you will have to fix manually. For example, I didn't add automatic population and implementation of the two custom columns this plugin adds into the characters table of the database. I left the two SQL queries you will have to use in the Installation section of the readme.
+
+For those running MySQL, be aware you may run across an issue where you can't run these two queries. This is because some versions of MySQL on Windows have a restriction in place where you cannot configure default values for TEXT types. In this case, I'm still unsure how to bypass it, but I believe there is a workaround listed here: https://stackoverflow.com/questions/3466872/why-cant-a-text-column-have-a-default-value-in-mysql. Using SQLite works perfectly with these two queries.
+
+Additionally, I wasn't able to find the content for the models that were used in the screenshots and the videos, so I've replaced the world models with basic HL2 ones to prevent errors in your inventory. If you want to switch them yourself, you can do so easily in the item files of each datapad.
+
 An edited version I worked on for a community that closed (unfinished).
 
 Features different from the version by James:
