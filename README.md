@@ -63,8 +63,10 @@ _GenericData
 _Datafile
 
 ie.
+```
 ALTER TABLE characters ADD _GenericData TEXT DEFAULT 'fill';
 ALTER TABLE characters ADD _Datafile TEXT DEFAULT 'fill';
+```
 
 _________________________
 <b>Streamables of the plugin(s)</b> - videos may or may not differ from what the plugin looks like now.
