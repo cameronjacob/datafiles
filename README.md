@@ -1,9 +1,10 @@
 ![Image of Datafile](https://i.imgur.com/2DnlQyU.png)
 # Datafiles
 ORIGINAL PLUGIN BY JAMES - PERMISSION FOR RELEASE GRANTED
+Conversion done by vex#0011.
 
 _________________________
-<b>INFORMATION</b>
+<b>Information</b>
 _________________________
 
 An edited version I worked on for a community that closed (unfinished).
@@ -19,13 +20,18 @@ Features different from the version by James:
 8. Fixed some incorrect datastream names.
 9. Transfered datafile SQL information to characters table instead of a whole new datafile table (did this because data transfered between characters if characters were deleted).
 
+Edits made by vex#0011:
+1. Now converted for use with HL2:RP v1.3.
+2. Changed item world models to use vanilla GMod models to prevent errors.
+3. Changed community-specific factions and unrecognizable names to more general use.
+
 What does the datapad/pda's do?
 1. Combine Datapad gives access to the /datafile, /managedatafile, /restrictdatafile, /scrubdatafile commands.
 2. CWU datapad gives access to a limited version of the /datafile (adding notes) and custom CWU only objectives editable by CWU leader settable by /setcwulead and /removecwulead.
 3. CMU datapad gives access to a limited version of the /datafile (adding medical notes) and custom CMU only objectives editable by CMU leader settable by /setcmulead and /removecmulead.
 
 _________________________
-<b>SHAREDVARS</b> (playerVars:Number only) -- primarily used for datapad sweps material switching to work properly
+<b>Shared vars</b> (playerVars:Number only) -- primarily used for datapad sweps material switching to work properly
 _________________________
 
 1. LoyaltyPoints
@@ -38,7 +44,7 @@ _________________________
 8. PlayerEnterOpen
 
 _________________________
-<b>UNFINISHED PARTS</b>
+<b>Unfinished</b>
 _________________________
 
 1. Didn't make SQL table creation automatic.
@@ -46,15 +52,21 @@ _________________________
 3. Apparently there's an error which I'm unable to recreate with the datapad derma.
 
 _________________________
-<b>FOR IT TO WORK YOU NEED TO DO THIS</b>
+<b>Installation</b>
 _________________________
 
-Add these columns to characters SQL table with default variable "fill" (I didn't bother to make it create itself):
+Place all four directories into your gamemodes/cwhl2rp/plugins/ folder.
+
+Add these columns to the characters SQL table with default variable "fill" (I didn't bother to make it create itself):
 _GenericData
 _Datafile
 
+ie.
+ALTER TABLE characters ADD _GenericData TEXT DEFAULT 'fill';
+ALTER TABLE characters ADD _Datafile TEXT DEFAULT 'fill';
+
 _________________________
-<b>STREAMABLES OF THE PLUGIN(S)</b> - videos may or may not differ from what the plugin looks like now.
+<b>Streamables of the plugin(s)</b> - videos may or may not differ from what the plugin looks like now.
 _________________________
 
 1. https://streamable.com/vfjmu
