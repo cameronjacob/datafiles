@@ -51,7 +51,11 @@ function cwDatafile:CreateDatafile(player)
 			queryObj:AddWhere("_SteamID = ?", steamID);
 			queryObj:AddWhere("_CharacterID = ?", character.characterID);
 			queryObj:SetValue("_GenericData", Clockwork.json:Encode(PLUGIN.Default.GenericData));
-			queryObj:SetValue("_Datafile", Clockwork.json:Encode(PLUGIN.Default.civilianDatafile));
+			if (player:GetFaction() == FACTION_MPF or player:GetFaction() == FACTION_OTA) then
+				queryObj:SetValue("_Datafile", Clockwork.json:Encode(PLUGIN.Default.combineDatafile));
+			else
+				queryObj:SetValue("_Datafile", Clockwork.json:Encode(PLUGIN.Default.civilianDatafile));
+			end
 		queryObj:Push();
 
 		// Change the hasDatafile bool to true to indicate the player has a datafile now.

@@ -52,7 +52,6 @@ function cwDatafile:UpdateDatafile(player, GenericData, datafile)
 			queryObj:AddWhere("_CharacterID = ?", character.characterID);
 			queryObj:AddWhere("_SteamID = ?", player:SteamID());
 			queryObj:AddWhere("_Schema = ?", schemaFolder);
-			debug.Trace()
 			queryObj:SetValue("_GenericData", Clockwork.json:Encode(GenericData));
 			queryObj:SetValue("_Datafile", Clockwork.json:Encode(datafile));
 		queryObj:Push();
