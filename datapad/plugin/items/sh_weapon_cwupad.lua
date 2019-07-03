@@ -6,8 +6,7 @@
 local ITEM = Clockwork.item:New("weapon_base");
 	ITEM.name = "CWU PDA";
 	ITEM.cost = 500;
-	--ITEM.model = "models/kali/miscstuff/stalker/pda.mdl";
-	ITEM.model = "models/props_lab/reciever01d.mdl";
+	ITEM.model = "models/kali/miscstuff/stalker/pda.mdl";
 	ITEM.weight = 1;
 	ITEM.access = "v";
 	ITEM.skin = 0
