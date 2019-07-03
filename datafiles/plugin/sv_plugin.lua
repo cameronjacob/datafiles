@@ -256,7 +256,7 @@ end
 
 // Return _GenericData in normal table format.
 function cwDatafile:ReturnGenericData(player)
-	return player:GetCharacter().file.GenericData;
+		return player:GetCharacter().file.GenericData;
 end;
 
 // Return _Datafile in normal table format.
