@@ -68,14 +68,14 @@ _________________________
 
 Place all four directories into your gamemodes/cwhl2rp/plugins/ folder.
 
-Add these columns to the characters SQL table with default variable "fill" (I didn't bother to make it create itself):
+Add these columns to the characters SQL table with datatype TEXT.
 _GenericData
 _Datafile
 
 ie.
 ```
-ALTER TABLE characters ADD _GenericData TEXT DEFAULT 'fill';
-ALTER TABLE characters ADD _Datafile TEXT DEFAULT 'fill';
+ALTER TABLE characters ADD _GenericData TEXT;
+ALTER TABLE characters ADD _Datafile TEXT;
 ```
 
 _________________________
