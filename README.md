@@ -57,6 +57,7 @@ ALTER TABLE characters ADD _Datafile TEXT;
 ## FAQ
 
 Q: I keep getting a tmysql error about a bad argument to pair #1!
+
 A: This is because the plugin checks for data before the datafiles are populated for new characters. You can ignore this.
 
 ## Streamables 
