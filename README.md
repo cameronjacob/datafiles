@@ -2,7 +2,7 @@
 # Datafiles
 ORIGINAL PLUGIN BY JAMES - PERMISSION FOR RELEASE GRANTED
 
-Conversion done by vex#0011.
+Conversion done by kiobu (kiobu#0011).
 
 ## Note
 
@@ -12,10 +12,9 @@ There are still some things you will have to add manually. For example, I didn't
 
 ## Information
 
-Edits made by vex#0011:
-1. Now converted for use with HL2:RP v1.3.
-2. Changed item world models to use vanilla GMod models to prevent errors.
-3. Changed community-specific factions and unrecognizable names to more general use.
+Edits made by kiobu:
+1. Now converted for use with HL2:RP v1.3 (removed deprecated functions).
+2. Changed community-specific factions and unrecognizable names to more general use.
 
 What does the datapad/pda's do?
 1. Combine Datapad gives access to the /datafile, /managedatafile, /restrictdatafile, /scrubdatafile commands.
@@ -57,7 +56,6 @@ ALTER TABLE characters ADD _Datafile TEXT;
 ## FAQ
 
 Q: I keep getting a tmysql error about a bad argument to pair #1!
-
 A: This is because the plugin checks for data before the datafiles are populated for new characters. You can ignore this.
 
 ## Streamables 
